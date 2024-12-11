@@ -3,15 +3,17 @@
 <head>
   <meta charset = "utf-8">
   <title>Auto-save panel</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Test</h1>
-  <button id="run-button">Run</button>
+  <button id="start-button">Start</button>
+  <button id="stop-button">Stop</button>
   <div class="slidecontainer">
-    <input type="range" min="1" max="60" value="30" class="slider" id="autosave-range">
+    <input type="range" min="1" max="60" value="5" class="slider" id="intervalRange">
   </div>
 
   <script type="text/javascript" src="CSInterface.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

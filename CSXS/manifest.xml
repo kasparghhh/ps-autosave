@@ -1,26 +1,23 @@
-<!--
-Code from : https://github.com/Adobe-CEP/Getting-Started-guides
--->
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<ExtensionManifest ExtensionBundleId = "ps-autosave.test" ExtensionBundleVersion = "1.0.0" Version = "1.0" xmlns
+<?xml version='1.0' encoding='UTF-8'?>
+<ExtensionManifest ExtensionBundleId="com.ps-autosave.test" ExtensionBundleVersion="1.0.0" Version="7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ExtensionList>
-    <Extension Id = "ps-autosave.test.panel" Version = "1.0.0" />
+    <Extension Id="com.ps-autosave.test.panel" Version="1.0.0" />
   </ExtensionList>
   <ExecutionEnvironment>
     <HostList>
-      <!--Version 19 is for CEP 8 which supports  CC 2018-->>
-      <Host Name = "PHSP" Version "19" />
-      <Host Name = "PHXS" Version "19" />
+      <!--Version 19 is for CEP 8 which supports  CC 2018-->
+      <Host Name="PHSP" Version="16" />
+      <Host Name="PHXS" Version="16" />
     </HostList>
     <LocaleList>
       <Locale Code = "All" />
     </LocaleList>
     <RequiredRuntimeList>
-      <RequiredRunTime Name = "CSXS" Version = "7.0" />
+      <RequiredRunTime Name="CSXS" Version="7.0" />
     </RequiredRuntimeList>
   </ExecutionEnvironment>
   <DispatchInfoList>
-    <Extension Id = "ps-autosave.test">
+    <Extension Id="com.ps-autosave.test.panel">
       <DispatchInfo>
         <Resources>
           <MainPath>./client/index.html</MainPath>
@@ -32,14 +29,16 @@ Code from : https://github.com/Adobe-CEP/Getting-Started-guides
         </Lifecycle>
         <UI>
           <Type>Panel</Type>
-          <Menu>Text</Menu>
+          <Menu>Testing?</Menu>
           <Geometry>
             <Size>
               <Height>500</Height>
               <Width>350</Width>
+            </Size>
           </Geometry>
-          <Icons />
+          <Icons/>
         </UI>
       </DispatchInfo>
     </Extension>
   </DispatchInfoList>
+</ExtensionManifest>
